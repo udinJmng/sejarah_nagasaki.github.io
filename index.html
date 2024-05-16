@@ -1,0 +1,161 @@
+<link rel="stylesheet" href="">
+
+<div class="kotak">
+
+<div class="navbar">
+    <div class="tombol1"><p>Home</p></div>
+    <div class="tombol2"><p>Informasi</p></div>
+    <div class="tombol3"><p>Kesimpulan</p></div>
+
+       </div>
+
+       <div class="infobox">
+        <div class="tombol1"><p>Nagasaki Hiroshima</p></div>
+        <div class="Info_text">
+            <h2>Latar Belakang</h2>
+            <pre>
+Penyebab dari pengeboman Hiroshima dan Nagasaki adalah serangan mendadak yang dilakukan oleh Jepang terhadap 
+pangkalan laut AS di Pearl Harbor, Hawaii, pada 7 Desember 1941.
+Serangan ini merusak armada Pasifik AS dan memicu perang antara kedua negara.
+
+Untuk membalas serangan Jepang dan mengakhiri perang secepat mungkin, 
+AS memutuskan untuk menggunakan senjata nuklir yang baru dikembangkan.
+AS memilih Hiroshima dan Nagasaki sebagai target pengeboman karena kota-kota ini 
+memiliki industri militer dan sipil yang penting.
+Pada 6 Agustus 1945, AS menjatuhkan bom atom pertama di Hiroshima. Tiga hari kemudian, AS menjatuhkan bom atom kedua di Nagasaki.              
+Pengeboman ini menyebabkan Jepang menyerah pada 15 Agustus 1945.
+                
+                
+            </pre>
+        </div>
+       </div>
+
+       <div class="infobox2">
+        <div class="tombol1"><p>Info</p></div>
+        <div class="Info_text">
+            <h2>Biodata Diri</h2>
+            <pre>
+Nama : Rusdi Ireng Jawir
+Kelas : F2-69
+            </pre>
+        </div>
+       </div>
+
+</div>
+
+<style>
+
+    pre {
+        font-family: "Lucida Console", "Courier New", monospace;
+  padding: 5px;
+  color: white;  
+
+    }
+
+    h2 {
+        font-family: "Lucida Console", "Courier New", monospace;
+  padding: 5px;
+color: white;  
+    }
+    .kotak {
+        background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(4,33,40,0.9436566863073355) 73%);
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        border-radius: 15px;
+        height: fit-content;
+        margin-top: 20%;
+        transition: width 2s, height 4s;
+
+    }
+
+    .kotak:hover {
+
+}
+
+
+    .infobox {
+        background: radial-gradient(circle, rgba(0,255,91,0.6971580868675595) 1%, rgba(4,114,73,0.795197302553834) 70%);
+        margin-left: auto;
+        border-radius: 15px;
+
+    }  
+      .infobox2 {
+        background: radial-gradient(circle, rgba(0,255,91,0.6971580868675595) 1%, rgba(4,114,73,0.795197302553834) 70%);
+        margin-left: auto;
+        border-radius: 15px;
+height: fit-content;
+opacity: 80%;
+
+    }
+
+    .navbar {
+        background: linear-gradient(270deg, rgba(74,243,134,0.6383345574557948) 0%, rgba(2,42,27,0.9436566863073355) 73%);
+        border-radius: 15px;
+opacity: 80%;
+height: fit-content;
+transition: .5s ease-in-out;
+
+    }
+
+    .tombol1,
+     .tombol2,
+     .tombol3 {
+        background: radial-gradient(circle, rgba(6,96,38,0.6383345574557948) 0%, rgba(15,117,79,0.9436566863073355) 73%);
+margin: 5px;
+padding: 2.3px;
+border-radius: 5px;
+transition: .5s ease-in-out;
+
+    }
+
+
+
+
+    .tombol1, .tombol2, .tombol3, p {
+text-align: center;   
+font-size: 20px;
+font-family: "Lucida Console", "Courier New", monospace;
+color: rgb(255, 255, 255);
+
+    }
+</style>
+<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<script>
+            let action = false;
+            let action2 = false;
+    $(".tombol2").click(function (e) { 
+        if (action == false) {
+            action = true;
+            $(".infobox").fadeIn();
+
+        } else if (action == true) {
+            action = false;
+            $(".infobox").fadeOut();
+
+        }
+        console.log(action);
+        
+    });
+
+    $(".tombol1").click(function (e) { 
+        if (action2 == false) {
+            action2 = true;
+            $(".infobox2").fadeIn();
+
+        } else if (action2 == true) {
+            action2 = false;
+            $(".infobox2").fadeOut();
+
+        }
+        console.log(action);
+        
+    });
+    $(".infobox").hide();
+    $(".infobox2").hide();
+
+</script>
